@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/StokTakip.Api/StokTakip.Api.csproj" />
+    <Project Path="src/StokTakip.Application/StokTakip.Application.csproj" />
+    <Project Path="src/StokTakip.Domain/StokTakip.Domain.csproj" />
+    <Project Path="src/StokTakip.Infrastructure/StokTakip.Infrastructure.csproj" />
+  </Folder>
+</Solution>
