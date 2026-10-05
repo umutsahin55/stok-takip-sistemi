@@ -5,8 +5,6 @@ using Microsoft.EntityFrameworkCore;
 using StokTakip.Application;
 
 namespace StokTakip.Api.Infrastructure;
-
-/// <summary>Merkezi hata yönetimi: iç detaylar (stack trace, SQL) istemciye sızdırılmaz.</summary>
 public class ExceptionMiddleware(RequestDelegate next, ILogger<ExceptionMiddleware> log)
 {
     static (int Status, object Body) Map(Exception ex) => ex switch

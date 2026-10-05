@@ -56,7 +56,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
     };
 });
 
-// Varsayılan: tüm endpoint'ler kimlik doğrulama ister; açık olanlar [AllowAnonymous] ile işaretlenir.
+// Varsayılan: tüm endpoint'ler kimlik doğrulama ister; açık olanlar ile işaretlenir.
 builder.Services.AddAuthorization(o => o.FallbackPolicy = new Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build());
 
 builder.Services.AddRateLimiter(o =>
